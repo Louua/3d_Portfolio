@@ -1,9 +1,21 @@
-import React from 'react'
+import React , {useEffect,useState}from 'react';
+import {Link } from 'react-router-dom' ;
+import {styles} from '../styles';
+import {navlink} from '../constants';
+import {loua , menu , close} from '../assets';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+
+    <nav
+    className='{`${styles.paddindx} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}'
+    
+    >
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'></div>
+
+    </nav>
   )
+
 }
 
 export default Navbar
